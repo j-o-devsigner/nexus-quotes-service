@@ -1,0 +1,33 @@
+{
+  "name": "nexus-quotes-service",
+  "version": "1.0.0",
+  "description": "Nexus quotes service for managing quotes",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=@babel/preset-env",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "React",
+    "JavaScript",
+    "NodeJS",
+    "Postgresql"
+  ],
+  "author": "John Ocampo <john.devsigner@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "nodemailer": "^6.9.1",
+    "nodemailer-sendgrid": "^1.0.3",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
