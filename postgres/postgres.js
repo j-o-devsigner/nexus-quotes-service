@@ -8,6 +8,9 @@ async function getConnection() {
         user: config.user,
         password: config.password,
         database: config.database,
+        ssl: config.ssl ? {
+            rejectUnauthorized: false,
+        } : false,
     });
     await client.connect();
     return client;
